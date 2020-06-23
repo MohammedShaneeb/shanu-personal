@@ -46,15 +46,5 @@ const appearOnScroll = new IntersectionObserver(function(entries,
     });
     
 
-    $document.ready(function(){
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 0){
-                $(".image").css({"opacity" : "0" })
-            }
-            else{
-                $(".image").css({"opacity" : "1" })
-            }
-
-
-        })
-    })
+    
+    

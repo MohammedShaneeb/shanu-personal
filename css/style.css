@@ -203,6 +203,7 @@ a.socialIcon:hover, .socialHoverClass {
 	border-top: brown;
 	border-radius: 5px;
 }
+
 @media only screen and (max-width:468px){
 	.profdevelopment{
 		font-size: 20px;
@@ -211,7 +212,7 @@ a.socialIcon:hover, .socialHoverClass {
 		
 	}
 }
-@media only screen and (max-width:468px){
+@media only screen and (max-width:394px){
 	.mytext1{
 		font-size: 35px;
 
@@ -220,13 +221,13 @@ a.socialIcon:hover, .socialHoverClass {
 } 
 @media only screen and (max-width: 468px){
 	.mytext2{
-		font-size: 20px;
+		font-size: 25px;
 		
 
 
 	}
 } 
-@media only screen and (max-width: 468px){
+@media only screen and (max-width: 390px){
 	.social-circle li a{
 	width: 25px;
 	height: 25px;
@@ -234,7 +235,7 @@ a.socialIcon:hover, .socialHoverClass {
 
 	}
 }
-@media only screen and (max-width:468px){
+@media only screen and (max-width:390px){
 	.social-circle li i{
 		line-height: 25px;
 	}
