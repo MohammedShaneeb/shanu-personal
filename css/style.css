@@ -23,6 +23,7 @@ p{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .navb{
+    -moz-background-size: cover;
 	opacity: 1;
 }
 .cover {
@@ -206,9 +207,9 @@ a.socialIcon:hover, .socialHoverClass {
 
 @media only screen and (max-width:468px){
 	.profdevelopment{
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: 800;
-		letter-spacing: 1px;
+		letter-spacing: 1.5px;
 		
 	}
 }
@@ -227,16 +228,16 @@ a.socialIcon:hover, .socialHoverClass {
 
 	}
 } 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 380px){
 	.social-circle li a{
-	width: 25px;
-	height: 25px;
-	font-size:10px;
+	width: 37.5px;
+	height: 37.5px;
+	font-size:15px;
 
 	}
 }
-@media only screen and (max-width:390px){
+@media only screen and (max-width:380px){
 	.social-circle li i{
-		line-height: 25px;
+		line-height: 37.5px;
 	}
 }
