@@ -6,6 +6,7 @@
     <title>Shaneeb</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@500&display=swap');
      </style>
@@ -284,54 +285,43 @@
               <h1 class="text-center headings pt-5">Contact me</h1>
               <div class="row">
                 <div class="col-lg-12">
-                  <form id="submit-form">
+                  <form  action="" id="submit-form">
                     <div class="form-row">
                       <div class="form-group col-lg-6 ">
                         <label for="inputEmail4">Name</label>
-                        <input type="text" name="name" class="form-control"  placeholder="Enter Your Beatiful Name For Me">
+                        <input type="text" name="Name" class="form-control"  placeholder="Enter your beatiful name for me">
                       </div>
                       <div class="form-group col-lg-6">
                         <label for="inputPassword4">Place</label>
-                        <input type="text" name="place" class="form-control"  placeholder="Enter Your PLACE">
+                        <input type="text" name="Place" class="form-control"  placeholder="Enter your place">
                       </div>
                     </div>
       
                     <div class="form-row">
                     <div class="form-group col-lg-6 ">
                       <label for="inputEmail4">Mobile</label>
-                      <input type="tel" name="tel" class="form-control"  placeholder="Enter Your Mobile Number">
+                      <input type="tel" name="Phone" class="form-control"  placeholder="Enter your mobile number">
                     </div>
                     <div class="form-group col-lg-6">
                       <label for="inputPassword4">Email</label>
-                      <input type="email" name="email" class="form-control" id="inputEmail4"  placeholder="Enter Your Email Address">
+                      <input type="email" name="Email" class="form-control" id="inputEmail4"  placeholder="Enter your email address">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group  col-lg-12">
                       <label for="inputAddress">Message</label>
-                      <textarea class="form-control" cols="30" rows="10" placeholder="Enter Something Here..."></textarea>
+                      <textarea class="form-control" name="Message" cols="30" rows="10" placeholder="Enter Something Here..."></textarea>
                     </div>
                   </div>
-                </div>
-                    
-                  <button onclick=" myFunction()" type="button" class="btn btn-outline-info " style="width: 100%;">Submit</button>
-                  <script>
-                      function myFunction() {
-                        alert("I AM SORRY this part is working progress.not completed ");
-                      }
-                      </script>
-      
-      
-      
-      
+                </div> 
+                  <button onclick=" myFunction()" type="submit" class="btn btn-outline-info " style="width: 100%;">Submit</button>
                   </form>
                 </div>
               </div>
             </div>
           </section>
+
           <footer class="bg-dark " >
-		
-		
 		        <div class="container-fluid">
             <div class="row">
               
@@ -341,11 +331,7 @@
               <p class="pl-1 footer footer-creativity">THE HOME OF CREATIVITY</p>
             </a>
               </div>
-            
-              
-              
-      
-            
+    
             <div class="col-md-5  col-7  pl-lg-4  "   >
               <div class="pl-lg-5 pl-col-3">
               <p > Follow me  </p>
@@ -367,21 +353,13 @@
             </a>
             <a href="tel:9895142020">
             <i class="fa fa-phone-square" aria-hidden="true"></i>
-              </a>
-        
-        
-             
-              
+              </a> 
             </div>
-      
-            
             </div>
             <div class="row">
               <div class="col-md-12 text-center  "  >
-                <p>©2020 Copyright All Right  Reserved| <br> Designed by <a class="footer"  href="#about" style="text-decoration: none;"> Clever boy mr Shaneeb c </a><p>
-                            
+                <p>©2020 Copyright All Right  Reserved| <br> Designed by <a class="footer"  href="#about" style="text-decoration: none;"> Clever boy mr Shaneeb c </a><p>          
               </div>
-      
             </div>
           </div>
           </footer>
@@ -400,6 +378,26 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 <script src="script.js"></script>
 <script src="https://use.fontawesome.com/f0e66b91b8.js"></script>
+
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbxrDG1Ih30P-I1h4Ei87KghLt7fOCAj7XDeirWW/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
 
 </body>
 </html>
