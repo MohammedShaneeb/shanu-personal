@@ -45,6 +45,16 @@ p{
     -ms-background-size: cover;
     min-height: 800px;
 }
+.contact-background{
+	background: url(../assets/contact\ us\ .jpg) no-repeat center;
+	background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 50vw;
+    position: relative;
+} 
 
 body {
     padding: 0;
@@ -194,6 +204,12 @@ a.socialIcon:hover, .socialHoverClass {
 	font-family: 'Pacifico', cursive;
 }
 .services{
+	color: #fff;
+	font-size: 36px;
+	padding-top: 0.5em;
+	font-family: 'Ubuntu', sans-serif;
+}
+.contact{
 	color: #fff;
 	font-size: 36px;
 	padding-top: 0.5em;
