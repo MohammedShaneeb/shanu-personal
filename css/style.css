@@ -54,6 +54,15 @@ p{
     -ms-background-size: cover;
     min-height: 50vw;
     position: relative;
+}
+.footer-background{
+	background: url(../assets/footer\ background.jpg) no-repeat center;
+	background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
 } 
 
 body {
