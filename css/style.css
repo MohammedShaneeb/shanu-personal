@@ -36,7 +36,7 @@ p{
     min-height: 50vw;
     position: relative;
 }
-.cover2{
+.services-background{
 	background: url(../assets/back2new.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
